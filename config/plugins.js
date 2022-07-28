@@ -1,4 +1,20 @@
 module.exports = ({ env }) => ({
+  redis: {
+    config: {
+      connections: {
+        default: { connection: env('REDIS_URL') },
+      },
+    },
+  },
+  "rest-cache": {
+    config: {
+      provider: { name: "redis" },
+      strategy: {
+        contentTypes: [{ contentType: "api::music.music", hitpass: false }],
+        //debug: true,
+      },
+    },
+  },
   'transformer': {
     enabled: true,
     config: {
