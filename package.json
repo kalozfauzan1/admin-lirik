@@ -19,6 +19,7 @@
     "strapi-middleware-cache": "^2.1.8",
     "strapi-plugin-redis": "^1.0.0-alpha.2",
     "strapi-plugin-rest-cache": "^4.2.4",
+    "strapi-plugin-slugify": "^2.2.2",
     "strapi-plugin-transformer": "^2.0.2",
     "strapi-provider-rest-cache-redis": "^4.2.4"
   },
